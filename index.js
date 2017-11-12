@@ -1,3 +1,5 @@
+// @flow
+
 //
 // ## round と moment
 //
@@ -68,6 +70,21 @@
 // その能力に応じた initiative が与えらえるべきである。
 //
 
+const icepick = require('icepick');
 
+/*::
+import type {
+  MomentNumber,
+} from './types';
+ */
 
+/**
+ * Progress a moment
+ */
+const proceed = (battle) => {
+  let newBattle = Object.assign({}, battle);
 
+  newBattle = icepick.assocIn(newBattle, ['MomentNumber'], newBattle.momentNumber + 1);
+
+  return newBattle;
+};

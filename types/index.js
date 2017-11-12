@@ -1,24 +1,36 @@
 // @flow
 
-type Damage = number;
-type Force = number;
-type ForceRatio = number;
-type Initiative = number;
-type MomentNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10;
-type PositionType = 'forward' | 'middle' | 'back';
-type ReactionPower = number;
-type RoundNumber = number;
+export type Damage = number;
+export type Force = number;
+export type ForceRatio = number;
+export type Initiative = number;
+export type MomentNumber = number;
+export type PositionType = 'forward' | 'middle' | 'back';
+export type ReactionPower = number;
 
 type Battler = {
   calculateDamage: () => Damage,
   calculateForce: () => Force,
   calculateInitiative: () => Initiative,
   calculateReactionPower: () => ReactionPower,
+  hitPoints: number,
   name: string,
   uid: string,
+};
+
+type ForceResult = {
+  battlerUid: $PropertyType<Battler, 'uid'>,
+  force: Force,
+  momentNumber: MomentNumber,
 };
 
 type Party = {
   battlers: Battler[],
   formation: {[PositionType]: $PropertyType<Battler, 'uid'>[]},
+};
+
+type Battle = {
+  forceResults: ForceResult[],
+  momentNumber: MomentNumber,
+  parties: [Party, Party],
 };
