@@ -16,5 +16,8 @@
     "url": "https://github.com/kjirou/force-ratio-based-rpg-battle-calculation/issues"
   },
   "homepage": "https://github.com/kjirou/force-ratio-based-rpg-battle-calculation#readme",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "flow-bin": "^0.59.0"
+  }
 }
