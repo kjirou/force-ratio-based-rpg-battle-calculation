@@ -1,1 +1,1 @@
-# force-ratio-based-combat-calculation
+# force-ratio-based-rpg-battle-calculation

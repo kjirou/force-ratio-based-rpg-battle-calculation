@@ -1,5 +1,5 @@
 {
-  "name": "force-ratio-based-combat-calculation",
+  "name": "force-ratio-based-rpg-battle-calculation",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kjirou/force-ratio-based-combat-calculation.git"
+    "url": "git+https://github.com/kjirou/force-ratio-based-rpg-battle-calculation.git"
   },
   "author": "kjirou",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kjirou/force-ratio-based-combat-calculation/issues"
+    "url": "https://github.com/kjirou/force-ratio-based-rpg-battle-calculation/issues"
   },
-  "homepage": "https://github.com/kjirou/force-ratio-based-combat-calculation#readme",
+  "homepage": "https://github.com/kjirou/force-ratio-based-rpg-battle-calculation#readme",
   "private": true
 }
